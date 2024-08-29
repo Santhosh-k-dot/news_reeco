@@ -1,0 +1,83 @@
+.news-article-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* Subtle border */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: var(--primary-color);
+    /* White background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    /* Smooth animations */
+}
+
+.news-article-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    /* Slightly rounded corners */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    /* Zoom effect */
+}
+
+.news-article-card img:hover {
+    transform: scale(1.03);
+    /* Zoom on hover */
+}
+
+.news-article-card .title {
+    font-weight: bold;
+    font-size: 18px;
+    /* Slightly smaller font size */
+    color: var(--accent-color);
+    /* Dark Blue */
+    transition: color 0.3s ease;
+    /* Smooth color transition */
+    padding-bottom: 10px;
+    /* Add padding at the bottom */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* Border below the title */
+}
+
+.news-article-card .description {
+    margin: 10px 0;
+    font-size: 14px;
+    /* Slightly smaller font size */
+    color: var(--text-color);
+    /* Dark Blue text color */
+    padding-bottom: 10px;
+    /* Add padding at the bottom */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    /* Border below the description */
+}
+.news-article-card .read-more {
+    color: var(--primary-color); /* White text color */
+    background-color: var(--accent-color); /* Dark Blue background color */
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid var(--accent-color); /* Dark Blue border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px 10px; /* Padding for better spacing */
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease; /* Smooth transitions */
+}
+
+.news-article-card .read-more:hover {
+    color: var(--primary-color); /* Maintain White text color on hover */
+    background-color: var(--hover-color); /* Slightly different blue for background on hover */
+    border-color: var(--hover-color); /* Change border color on hover */
+}
+
+
+
+.news-article-card:hover {
+    border-color: var(--accent-color);
+    /* Change border color on hover */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+    /* Increased shadow on hover */
+    transform: translateY(-5px);
+    /* Lift card slightly on hover */
+}

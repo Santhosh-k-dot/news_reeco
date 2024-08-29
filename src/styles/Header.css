@@ -1,0 +1,70 @@
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/real-estate-header.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-test-box h1 {
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 52px;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-test-box a.btn {
+    margin: 10px;
+    padding: 12px 28px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #0056b3;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-test-box a.btn:hover {
+    background-color: #003a75;
+    transform: scale(1.05);
+}
+
+.hero-test-box a.btn-ghost {
+    background-color: transparent;
+    border: 2px solid #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-test-box a.btn-ghost:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .hero-test-box h1 {
+        font-size: 36px;
+    }
+
+    .hero-test-box a.btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-test-box h1 {
+        font-size: 28px;
+    }
+
+    .hero-test-box a.btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
