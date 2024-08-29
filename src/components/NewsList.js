@@ -32,14 +32,13 @@ const NewsList = ({ searchQuery }) => {
 
     return (
         <div className="news-cards-container">
-            {loading && <p>Loading...</p>}
-            {error && <p className="error-message">Error: {error}</p>}
-            {articles.length > 0 ? (
+            {loading && articles.length === 0 && <p>Loading news articles...</p>}
+            {error && <p className="error-message">Failed to load news articles: {error}</p>}
+            {!loading && articles.length === 0 && !error && <p>No articles found. Please try a different search.</p>}
+            {articles.length > 0 && (
                 articles.map((article, index) => (
                     <NewsCard key={index} article={article} />
                 ))
-            ) : (
-                <p>Loading news articles.</p>
             )}
         </div>
     );
